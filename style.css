@@ -1,0 +1,146 @@
+:root {
+    --ff-primary: 'Barlow Semi Condensed', sans-serif;
+    --ff-accent: 'Great Vibes', cursive;
+}
+
+html {
+    font-size: 13px;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Formatting - text */
+
+h2.name {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+}
+
+h3.role {
+    font-size: 0.75rem;
+    opacity: 50%;
+    margin-top: 0.2rem;
+    font-weight: bold;
+}
+
+p.bold-paragraph {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 2.5rem;
+}
+
+p.light-paragraph {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    opacity: 70%;
+    text-align: justify;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+/*Grid*/
+
+div.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    justify-content: center;
+    margin: 3rem 10%;
+}
+
+
+img.profile-photo {
+    border-radius: 100%;
+    float: left;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* Formating - each container*/
+
+div.main-container > * {
+    border-radius: 3%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+div.container-1 {
+    grid-area: 1 / 1 / 1 / 3;
+    background-color: hsl(263, 55%, 52%);
+    color: hsl(0, 0%, 100%);
+    background-image: url("/Users/andreahideg/Desktop/PROJECTS/Frontendmentor/testimonials-grid-section-main/images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-size: 100px 200px;
+    background-position: 85% -30%; 
+}
+
+
+div.container-2 {
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 100%);
+}
+
+div.container-3 {
+ grid-area: 1 / 4 / 3 / 4;
+ background-color: hsl(0, 0%, 100%);
+ color: hsl(217, 19%, 35%);
+}
+
+div.container-4 {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+}
+
+div.container-5 {
+    grid-area: 2 / 2 / 2 / 4;
+    background-color: hsl(219, 29%, 14%);
+    color:hsl(0, 0%, 100%);
+
+}
+
+@media only screen and (max-width: 1024px) {
+    div.main-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.2fr 0.7fr 1.3fr 0.65fr 1.1fr;
+    }
+
+    div.container-1 {
+        grid-area: 1 / 1 / 1 / 1;
+        background-size: 90px 120px;
+        background-position: 90% 0%; 
+    }
+
+    div.container-2 {
+        grid-area: 2 / 1 / 2 / 1 ;
+    }
+
+    div.container-3 {
+        grid-area: 3 / 1 / 3 / 1;
+    }
+
+    div.container-4 {
+        grid-area: 4 / 1 / 4 / 1;
+    }
+
+    div.container-5 {
+        grid-area: 5 / 1 / 5 / 1;
+    }
+};
+
+
+
+
+
